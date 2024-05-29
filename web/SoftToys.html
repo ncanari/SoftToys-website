@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Магазин вязаных игрушек ручной работы. Handmade вязаные игрушки.">
+    <meta name="keywords" content="вязание, вязаные игрушки, игрушки ручной работы, Handmade, handmade игрушки, игрушки">
+    <title>Магазин вязаных игрушек</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <li><img id="logo_head" src="logo2.png" alt="logo"></li>
+            <li><a href="#top_row">ОБ АВТОРЕ</a></li>
+            <li><a href="#feature">ОСОБЕННОСТИ</a></li>
+            <li><a href="#catalog">КАТАЛОГ</a></li>
+            <li><a href="#choose">ВЫБРАТЬ ИГРУШКУ</a></li>
+            <li><a href="#contact">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="first">
+        <div>
+          <div>
+            <div class="mid">
+              <h1>ВЯЗАНЫЕ ИГРУШКИ РУЧНОЙ РАБОТЫ - ЭТО НАСТОЯЩЕЕ ВОЛШЕБСТВО!</h1>
+              <button><a href="#choose">ВЫБРАТЬ ИГРУШКУ</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Наверх
+        </button>
+        <div id="top_row">
+          <h2>Об авторе</h2>
+          <p>
+            Я Настя и я создаю эти милые вязаные игрушки<br>своими руками.
+          </p>
+          <p>
+            Я очень счастлива, что мое хобби<br>
+            дарит радость Вам, Вашим друзьям и детям!
+          </p>
+        </div>
+        <img id="img_right" src="bears.jpg" alt="bears">
+        <img id="img_left" src="kid1.jpg" alt="kid1">
+        <div id="bottom_row">
+          <h2>Об игрушках</h2>
+          <p>
+            Вязаные игрушки - это не только милые и уютные<br>
+            вещицы, но и уникальные подарки, которые<br>
+            согревают душу.
+          </p>
+          <p>
+            Каждая игрушка создана с любовью и заботой, и<br>
+            несет в себе тепло рук мастера.
+          </p>
+          
+          <div id="frame_text">
+            <img id="logo_frame" src="frame.svg" alt="logo for frame">
+            <p>
+              Все игрушки выполнены из качественных<br>
+              материалов и безопасны для детей.<br><br>
+              Изделие готовится в течение 2-7 дней.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="third" id="feature">
+        <h2>Об игрушках: ОСОБЕННОСТИ</h2>
+        <div id="details">
+          <div class="point">
+            <img src="Vector.svg" alt="icon detail 1">
+            <p>
+              Пряжа приятная на ощупь<br>
+              Микро-полиэстер
+            </p>
+          </div>
+
+          <div class="point">
+            <img src="Vector-1.svg" alt="icon detail 2">
+            <p>Гипоаллергенный наполнитель<br>Холлофайбер</p>
+          </div>
+
+          <div class="point">
+            <img src="Group.svg" alt="icon detail 3">
+            <p>Ручная стирка<br>Сухая чистка<br>Минимальный уход</p>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <button
+            class="carousel__button carousel__button--left"
+            onclick="shiftSlide(-1)"
+          >
+            <=
+          </button>
+          <button
+            class="carousel__button carousel__button--right"
+            onclick="shiftSlide(1)"
+          >
+            =>
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img
+                  class="carousel__image"
+                  src="gallery/1.jpg"
+                  alt="Image 1"
+                >
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="gallery/2.jpg"
+                  alt="Image 2"
+                >
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="gallery/3.jpg"
+                  alt="Image 3"
+                >
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="gallery/4.jpg"
+                  alt="Image 4"
+                >
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="gallery/5.jpg"
+                  alt="Image 5"
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth" id="catalog">
+        <div class="flex_col">
+          <h2>Каталог вязаных игрушек</h2>
+          <div class="flex_col1">
+            <div class="flex_row">
+              <div class="flex_col2">
+                <img class="image15" src="catalog/1.png" alt="toy 1">
+                <div class="content_box">
+                  <h3 class="subtitle21">Мишка - комфортер<br>1 990 ₽</h3>
+                </div>
+              </div>
+              <div class="flex_col2">
+                <img class="image15" src="catalog/2.png" alt="toy 2">
+                <div class="content_box1">
+                  <h3 class="subtitle21">Единорожек<br>1 790 ₽</h3>
+                </div>
+              </div>
+              <div class="flex_col2">
+                <img class="image15" src="catalog/3.png" alt="toy 3">
+                <div class="content_box2">
+                  <h3 class="subtitle21">Плюшевый зайчонок<br>1 500 ₽</h3>
+                </div>
+              </div>
+            </div>
+            <div class="flex_row">
+              <div class="flex_col2">
+                <img class="image15" src="catalog/4.png" alt="toy 4">
+                <div class="content_box">
+                  <h3 class="subtitle21">Плюшевая мишутка<br>2 890 ₽</h3>
+                </div>
+              </div>
+              <div class="flex_col2">
+                <img class="image15" src="catalog/5.png" alt="toy 5">
+                <div class="content_box1">
+                  <h3 class="subtitle21">Плюшевый медвежонок<br>1 290 ₽</h3>
+                </div>
+              </div>
+              <div class="flex_col2">
+                <img class="image15" src="catalog/6.png" alt="toy 6">
+                <div class="content_box2">
+                  <h3 class="subtitle21">Оленёнок<br>2 290 ₽</h3>
+                </div>
+              </div>
+            </div>
+            <div class="flex_row">
+              <div class="flex_col2">
+                <img class="image15" src="catalog/7.png" alt="toy 7">
+                <div class="content_box">
+                  <h3 class="subtitle21">Набор - 4 игрушки<br>4 990 ₽</h3>
+                </div>
+              </div>
+              <div class="flex_col2">
+                <img class="image15" src="catalog/8.png" alt="toy 8">
+                <div class="content_box1">
+                  <h3 class="subtitle21">Набор - 2 игрушки<br>3 790 ₽</h3>
+                </div>
+              </div>
+              <div class="flex_col2">
+                <img class="image15" src="catalog/9.png" alt="toy 9">
+                <div class="content_box2">
+                  <h3 class="subtitle21">Зайчонок - погремушка<br>890 ₽</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifth" id="choose">
+        <div id="left_text">
+          <h2>Выбрать игрушку</h2>
+          <p>
+            Получи свою уникальную игрушку!<br>Я свяжусь с тобой по E-mail
+          </p>
+          <p>
+            Вязаная игрушка станет отличным подарком<br>для Ваших близких и
+            друзей!
+          </p>
+          <p>Изделие готовится в течение 2-7 дней</p>
+        </div>
+        <div id="form">
+          <form action="/submit_form" method="post">
+            <div id="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail*"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              ><br>
+            </div>
+
+            <div class="field">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Имя*"
+                required
+              ><br>
+            </div>
+
+            <div class="field">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="987-654-3210"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              ><br>
+            </div>
+
+            <div class="field">
+              <select id="toy" name="toy">
+                <option value="toy1">Мишка - комфортер</option>
+                <option value="toy2">Единорожек</option>
+                <option value="toy3">Плюшевый зайчонок</option>
+                <option value="toy4">Плюшевая мишутка</option>
+                <option value="toy5">Плюшевый медвежонок</option>
+                <option value="toy6">Оленёнок</option>
+                <option value="toy7">Набор - 4 игрушки</option>
+                <option value="toy8">Набор - 2 игрушки</option>
+                <option value="toy9">Зайчонок - погремушка</option></select
+              ><br>
+            </div>
+
+            <input type="submit" value="Заказать игрушку" id="button_form">
+          </form>
+        </div>
+      </section>
+
+      <section class="footer" id="contact">
+        <div class="contactRow">
+          <div class="contactColumn">
+            <h3><a href="#">Вконтакте</a></h3>
+            <h3><a href="#">Telegram</a></h3>
+          </div>
+          <img class="contactImage" src="logo.png" alt="logo">
+          <div class="contactInfoColumn">
+            <h3><a href="tel:+19000010000">+1-900-001-0000</a></h3>
+            <h3><a href="mailto:soft_toys@toy.com">soft_toys@toy.com</a></h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
